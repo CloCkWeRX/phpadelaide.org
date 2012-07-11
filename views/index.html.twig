@@ -15,7 +15,7 @@
 <blockquote>
     <p>{{ t.text }}</p>
     
-    <img src="{{ t.profile_image_url }}" alt="{{ t.from_user_name }}">
+    <a href="https://twitter.com/{{ t.from_user }}"><img src="{{ t.profile_image_url }}" alt="{{ t.from_user_name }}"></a>
     
     &mdash; {{ t.from_user_name }} (@{{ t.from_user }}) <a href="https://twitter.com/{{ t.from_user }}/status/{{ t.id_str }}" data-datetime="{{ t.created_at|date("c") }}">{{ t.created_at|date("d M Y") }}</a>
 </blockquote>
